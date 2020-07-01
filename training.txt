@@ -1,0 +1,13 @@
+
+Call:
+ randomForest(formula = Species ~ ., data = training, ntree = 100,      mtry = 2, importance = TRUE) 
+               Type of random forest: classification
+                     Number of trees: 100
+No. of variables tried at each split: 2
+
+        OOB estimate of  error rate: 5.83%
+Confusion matrix:
+           Setosa Versicolor Virginica class.error
+Setosa         30          0         0  0.00000000
+Versicolor      0         36         2  0.05263158
+Virginica       0          4        31  0.11428571
