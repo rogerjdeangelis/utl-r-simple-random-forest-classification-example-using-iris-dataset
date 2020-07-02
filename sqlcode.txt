@@ -1,0 +1,1198 @@
+[[1]]
+<SQL> CASE
+WHEN (`petallength` < 3.1 AND `sepalwidth` >= 3.25) THEN ('Setosa')
+WHEN (`petallength` < 2.3 AND `petalwidth` < 1.65 AND `sepalwidth` < 3.25) THEN ('Setosa')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.65 AND `sepalwidth` < 3.25) THEN ('Virginica')
+WHEN (`sepallength` < 6.1 AND `petallength` >= 3.1 AND `sepalwidth` >= 3.25) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.1 AND `petallength` >= 3.1 AND `sepalwidth` >= 3.25) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petallength` >= 2.3 AND `petalwidth` < 1.65 AND `sepalwidth` < 3.25) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petallength` >= 2.3 AND `petalwidth` < 1.65 AND `sepalwidth` < 3.25) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `sepalwidth` < 3.25) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `sepalwidth` < 3.25) THEN ('Versicolor')
+END
+
+[[2]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petallength` < 4.75 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.35) THEN ('Virginica')
+END
+
+[[3]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` >= 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.65 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `sepallength` < 6.05 AND `petalwidth` >= 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `sepallength` < 6.05 AND `petalwidth` >= 1.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` < 6.6 AND `sepalwidth` >= 2.65 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.6 AND `sepalwidth` >= 2.65 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[4]]
+<SQL> CASE
+WHEN (`petallength` < 2.5 AND `petallength` < 4.95) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.95) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` >= 2.5 AND `petallength` < 4.95) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.5 AND `petallength` < 4.95) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `petallength` >= 4.95) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `petallength` >= 4.95) THEN ('Versicolor')
+END
+
+[[5]]
+<SQL> CASE
+WHEN (`sepallength` < 5.95 AND `sepalwidth` >= 3.35) THEN ('Setosa')
+WHEN (`sepallength` >= 5.95 AND `sepalwidth` >= 3.35) THEN ('Virginica')
+WHEN (`petallength` < 2.25 AND `petallength` < 4.75 AND `sepalwidth` < 3.35) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` >= 2.25 AND `petallength` < 4.75 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.25 AND `petallength` < 4.75 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepalwidth` < 3.35) THEN ('Virginica')
+END
+
+[[6]]
+<SQL> CASE
+WHEN (`petallength` < 2.5) THEN ('Setosa')
+WHEN (`sepallength` < 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepallength` >= 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`petallength` >= 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `sepalwidth` >= 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `sepalwidth` >= 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.65 AND `petallength` < 5.05 AND `sepalwidth` < 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepallength` < 5.9 AND `petallength` >= 5.05 AND `sepalwidth` < 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepallength` >= 5.9 AND `petallength` >= 5.05 AND `sepalwidth` < 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`sepallength` < 6.15 AND `petalwidth` < 1.65 AND `petallength` < 5.05 AND `sepalwidth` < 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepallength` >= 6.15 AND `petalwidth` < 1.65 AND `petallength` < 5.05 AND `sepalwidth` < 2.75 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `petallength` >= 2.5) THEN ('Versicolor')
+END
+
+[[7]]
+<SQL> CASE
+WHEN (`petallength` < 2.75) THEN ('Setosa')
+WHEN (`petallength` >= 4.95 AND `sepallength` < 5.95 AND `petallength` >= 2.75) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` >= 5.95 AND `petallength` >= 2.75) THEN ('Virginica')
+WHEN (`sepallength` < 5.05 AND `petallength` < 4.95 AND `sepallength` < 5.95 AND `petallength` >= 2.75) THEN ('Virginica')
+WHEN (`sepallength` >= 5.05 AND `petallength` < 4.95 AND `sepallength` < 5.95 AND `petallength` >= 2.75) THEN ('Versicolor')
+WHEN (`sepallength` < 6.15 AND `petalwidth` < 1.55 AND `sepallength` >= 5.95 AND `petallength` >= 2.75) THEN ('Virginica')
+WHEN (`sepallength` >= 6.15 AND `petalwidth` < 1.55 AND `sepallength` >= 5.95 AND `petallength` >= 2.75) THEN ('Versicolor')
+END
+
+[[8]]
+<SQL> CASE
+WHEN (`petallength` < 4.75 AND `petalwidth` >= 1.55) THEN ('Versicolor')
+WHEN (`petallength` >= 4.75 AND `petalwidth` >= 1.55) THEN ('Virginica')
+WHEN (`petallength` < 2.3 AND `sepalwidth` < 3.15 AND `petalwidth` < 1.55) THEN ('Setosa')
+WHEN (`petallength` < 3.2 AND `sepalwidth` >= 3.15 AND `petalwidth` < 1.55) THEN ('Setosa')
+WHEN (`petallength` >= 3.2 AND `sepalwidth` >= 3.15 AND `petalwidth` < 1.55) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.65 AND `petallength` >= 2.3 AND `sepalwidth` < 3.15 AND `petalwidth` < 1.55) THEN ('Versicolor')
+WHEN (`sepallength` < 5.8 AND `sepalwidth` < 2.65 AND `petallength` >= 2.3 AND `sepalwidth` < 3.15 AND `petalwidth` < 1.55) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.55 AND `sepallength` >= 5.8 AND `sepalwidth` < 2.65 AND `petallength` >= 2.3 AND `sepalwidth` < 3.15 AND `petalwidth` < 1.55) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.55 AND `sepallength` >= 5.8 AND `sepalwidth` < 2.65 AND `petallength` >= 2.3 AND `sepalwidth` < 3.15 AND `petalwidth` < 1.55) THEN ('Virginica')
+END
+
+[[9]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.75 AND `petallength` >= 4.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.65 AND `sepalwidth` < 2.75 AND `petallength` >= 4.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`sepallength` < 5.9 AND `sepalwidth` >= 2.65 AND `sepalwidth` < 2.75 AND `petallength` >= 4.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepallength` >= 5.9 AND `sepalwidth` >= 2.65 AND `sepalwidth` < 2.75 AND `petallength` >= 4.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+END
+
+[[10]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.85) THEN ('Setosa')
+WHEN (`petalwidth` < 1.7 AND `petalwidth` >= 0.85) THEN ('Versicolor')
+WHEN (`petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.85) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.85) THEN ('Virginica')
+END
+
+[[11]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8 AND `petalwidth` < 1.7) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7) THEN ('Virginica')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `petallength` < 4.85 AND `petalwidth` >= 1.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petallength` < 4.85 AND `petalwidth` >= 1.7) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `sepallength` < 7.1 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `sepallength` < 7.1 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Virginica')
+END
+
+[[12]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.55 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petalwidth` < 1.55 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` >= 1.55 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `sepallength` < 6.05 AND `petalwidth` >= 1.55 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petalwidth` >= 1.65 AND `sepallength` < 6.05 AND `petalwidth` >= 1.55 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petalwidth` >= 1.65 AND `sepallength` < 6.05 AND `petalwidth` >= 1.55 AND `petallength` >= 2.45) THEN ('Versicolor')
+END
+
+[[13]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petalwidth` < 1.35 AND `petalwidth` < 1.7 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `petalwidth` >= 1.35 AND `petalwidth` < 1.7 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `petalwidth` >= 1.35 AND `petalwidth` < 1.7 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[14]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.55 AND `petalwidth` >= 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.55 AND `petalwidth` >= 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[15]]
+<SQL> CASE
+WHEN (`petallength` < 2.7) THEN ('Setosa')
+WHEN (`sepallength` >= 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`petallength` >= 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.35 AND `petalwidth` < 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.35 AND `petalwidth` < 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`sepallength` < 5.85 AND `petalwidth` >= 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `sepallength` >= 5.85 AND `petalwidth` >= 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.1 AND `petallength` < 4.85 AND `sepallength` >= 5.85 AND `petalwidth` >= 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `sepallength` >= 5.85 AND `petalwidth` >= 1.7 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `sepallength` < 7.1 AND `petallength` >= 2.7) THEN ('Versicolor')
+END
+
+[[16]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `sepallength` >= 6.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` >= 6.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `petalwidth` < 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 5.85 AND `sepallength` < 6.05 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` >= 5.85 AND `sepallength` < 6.05 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.85 AND `sepallength` < 6.05 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+END
+
+[[17]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` < 4.7 AND `sepalwidth` < 2.95 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`sepallength` >= 4.7 AND `sepalwidth` < 2.95 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petallength` < 2.95 AND `sepalwidth` >= 2.95 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petallength` >= 2.95 AND `sepalwidth` >= 2.95 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.7 AND `petalwidth` < 1.55 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.7 AND `petalwidth` < 1.55 AND `petallength` >= 4.75) THEN ('Versicolor')
+END
+
+[[18]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.9 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` >= 6.55 AND `petalwidth` < 1.9 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `sepallength` < 6.55 AND `petalwidth` < 1.9 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` < 5.95 AND `sepallength` < 6.55 AND `petalwidth` < 1.9 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` < 5.95 AND `sepallength` < 6.55 AND `petalwidth` < 1.9 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[19]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petalwidth` < 0.7 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[20]]
+<SQL> CASE
+WHEN (`petallength` >= 4.95) THEN ('Virginica')
+WHEN (`petallength` < 2.45 AND `petallength` < 4.95) THEN ('Setosa')
+WHEN (`petalwidth` < 1.7 AND `petallength` >= 2.45 AND `petallength` < 4.95) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petalwidth` >= 1.7 AND `petallength` >= 2.45 AND `petallength` < 4.95) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petalwidth` >= 1.7 AND `petallength` >= 2.45 AND `petallength` < 4.95) THEN ('Versicolor')
+END
+
+[[21]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` < 5.05 AND `sepalwidth` < 2.65 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.05 AND `sepalwidth` < 2.65 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[22]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`sepallength` >= 7.1 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petalwidth` < 1.7 AND `sepallength` < 7.1 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` < 7.1 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[23]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.3 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.25 AND `sepalwidth` < 2.3 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.25 AND `sepalwidth` < 2.3 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[24]]
+<SQL> CASE
+WHEN (`petallength` < 2.6 AND `sepallength` < 5.45) THEN ('Setosa')
+WHEN (`petallength` >= 2.6 AND `sepallength` < 5.45) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `sepallength` >= 6.15 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` >= 6.15 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`petallength` < 4.7 AND `sepalwidth` >= 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` >= 4.7 AND `sepalwidth` >= 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepalwidth` < 3.1 AND `petallength` >= 4.7 AND `sepalwidth` >= 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.1 AND `petallength` >= 4.7 AND `sepalwidth` >= 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.1 AND `petallength` >= 4.7 AND `sepalwidth` >= 2.3 AND `sepalwidth` < 3.45 AND `sepallength` < 6.15 AND `sepallength` >= 5.45) THEN ('Versicolor')
+END
+
+[[25]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`sepallength` >= 6.05 AND `petallength` >= 4.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` >= 5.05 AND `petallength` < 4.75 AND `petallength` < 4.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` < 6.55 AND `petallength` >= 4.75 AND `petallength` < 4.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` >= 6.55 AND `petallength` >= 4.75 AND `petallength` < 4.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` < 5.9 AND `sepallength` < 6.05 AND `petallength` >= 4.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petalwidth` < 1.35 AND `sepallength` < 5.05 AND `petallength` < 4.75 AND `petallength` < 4.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.35 AND `sepallength` < 5.05 AND `petallength` < 4.75 AND `petallength` < 4.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `sepallength` >= 5.9 AND `sepallength` < 6.05 AND `petallength` >= 4.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` >= 5.9 AND `sepallength` < 6.05 AND `petallength` >= 4.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+END
+
+[[26]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `sepallength` < 5.95 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 5.95 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.15 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.85 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petallength` < 5.15 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[27]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.0 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.85 AND `sepallength` < 6.0 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.85 AND `sepallength` < 6.0 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[28]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.05 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petallength` >= 5.05 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petallength` >= 5.05 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[29]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 5.15 AND `petalwidth` < 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.15 AND `petalwidth` < 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 5.4 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `sepallength` >= 5.4 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepalwidth` < 3.1 AND `sepallength` >= 5.4 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.1 AND `sepallength` >= 5.4 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.1 AND `sepallength` >= 5.4 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[30]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.35 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 1.35 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` < 7.1 AND `petalwidth` >= 1.35 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` < 7.1 AND `petalwidth` >= 1.35 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[31]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 5.35 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `petallength` >= 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petallength` >= 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[32]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepallength` >= 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.8 AND `sepallength` >= 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.8 AND `sepallength` >= 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` < 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` >= 6.2 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `sepallength` < 6.2 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` < 6.2 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepallength` < 6.55 AND `sepallength` < 7.05 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[33]]
+<SQL> CASE
+WHEN (`sepalwidth` >= 2.85 AND `sepallength` < 5.35) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `sepalwidth` < 2.85 AND `sepallength` < 5.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.55 AND `sepalwidth` < 2.85 AND `sepallength` < 5.35) THEN ('Virginica')
+WHEN (`petallength` < 2.6 AND `petalwidth` < 1.7 AND `sepallength` >= 5.35) THEN ('Setosa')
+WHEN (`petallength` >= 2.6 AND `petalwidth` < 1.7 AND `sepallength` >= 5.35) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Virginica')
+WHEN (`petalwidth` < 2.0 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 2.0 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Virginica')
+END
+
+[[34]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.6 AND `sepalwidth` < 3.15 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petallength` < 3.1 AND `sepalwidth` >= 3.15 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petallength` >= 3.1 AND `sepalwidth` >= 3.15 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petallength` < 4.95 AND `sepalwidth` < 2.55 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepalwidth` < 2.55 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.7 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petalwidth` < 1.6 AND `petalwidth` >= 0.6 AND `sepalwidth` < 3.15 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `petalwidth` >= 0.6 AND `sepalwidth` < 3.15 AND `petallength` < 4.75) THEN ('Virginica')
+WHEN (`petalwidth` < 1.5 AND `petalwidth` < 1.7 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `petalwidth` >= 1.5 AND `petalwidth` < 1.7 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` >= 1.5 AND `petalwidth` < 1.7 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75) THEN ('Virginica')
+END
+
+[[35]]
+<SQL> CASE
+WHEN (`petallength` < 2.35 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.85 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` >= 2.35 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.35 AND `petallength` < 4.75) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petalwidth` < 1.85 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.75 AND `sepalwidth` < 3.1 AND `petalwidth` < 1.85 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `sepalwidth` < 2.75 AND `sepalwidth` < 3.1 AND `petalwidth` < 1.85 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`sepallength` < 6.2 AND `sepalwidth` < 2.65 AND `sepalwidth` < 2.75 AND `sepalwidth` < 3.1 AND `petalwidth` < 1.85 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` >= 6.2 AND `sepalwidth` < 2.65 AND `sepalwidth` < 2.75 AND `sepalwidth` < 3.1 AND `petalwidth` < 1.85 AND `petallength` >= 4.75) THEN ('Versicolor')
+END
+
+[[36]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`sepallength` >= 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.5 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[37]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.7 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.6 AND `petallength` < 4.95 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` < 6.25 AND `sepallength` < 6.6 AND `petallength` < 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` >= 6.25 AND `sepallength` < 6.6 AND `petallength` < 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petallength` < 5.05 AND `sepallength` < 6.05 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petallength` >= 5.05 AND `sepallength` < 6.05 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75) THEN ('Versicolor')
+END
+
+[[38]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepallength` >= 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[39]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petalwidth` < 1.25 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.25 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[40]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.7) THEN ('Virginica')
+WHEN (`petalwidth` < 0.8 AND `petalwidth` < 1.7) THEN ('Setosa')
+WHEN (`sepalwidth` >= 2.65 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Versicolor')
+WHEN (`petallength` < 5.25 AND `sepalwidth` < 2.65 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Versicolor')
+WHEN (`petallength` >= 5.25 AND `sepalwidth` < 2.65 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Virginica')
+END
+
+[[41]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7 AND `sepallength` < 5.75) THEN ('Setosa')
+WHEN (`sepalwidth` < 2.75 AND `petalwidth` >= 0.7 AND `sepallength` < 5.75) THEN ('Versicolor')
+WHEN (`petallength` < 2.6 AND `petallength` < 4.75 AND `sepallength` >= 5.75) THEN ('Setosa')
+WHEN (`petallength` >= 2.6 AND `petallength` < 4.75 AND `sepallength` >= 5.75) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.9 AND `sepalwidth` >= 2.75 AND `petalwidth` >= 0.7 AND `sepallength` < 5.75) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.9 AND `sepalwidth` >= 2.75 AND `petalwidth` >= 0.7 AND `sepallength` < 5.75) THEN ('Versicolor')
+WHEN (`petallength` < 4.95 AND `sepalwidth` < 2.55 AND `petallength` >= 4.75 AND `sepallength` >= 5.75) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepalwidth` < 2.55 AND `petallength` >= 4.75 AND `sepallength` >= 5.75) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75 AND `sepallength` >= 5.75) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `petalwidth` < 1.55 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75 AND `sepallength` >= 5.75) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` < 1.55 AND `sepalwidth` >= 2.55 AND `petallength` >= 4.75 AND `sepallength` >= 5.75) THEN ('Versicolor')
+END
+
+[[42]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` < 1.7 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `petalwidth` >= 1.7 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` >= 1.7 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.15 AND `petallength` < 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.05 AND `sepalwidth` < 3.15 AND `petallength` < 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepalwidth` < 3.05 AND `sepalwidth` < 3.15 AND `petallength` < 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.35 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.05 AND `sepalwidth` < 3.15 AND `petallength` < 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.35 AND `petalwidth` < 1.7 AND `sepalwidth` < 3.05 AND `sepalwidth` < 3.15 AND `petallength` < 5.15 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[43]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petallength` < 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petallength` < 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[44]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 5.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` < 3.9 AND `sepallength` < 4.95 AND `sepallength` < 5.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 3.9 AND `sepallength` < 4.95 AND `sepallength` < 5.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.7 AND `sepallength` >= 4.95 AND `sepallength` < 5.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petallength` >= 4.75 AND `sepallength` >= 5.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petalwidth` < 1.75 AND `sepalwidth` >= 2.7 AND `sepallength` >= 4.95 AND `sepallength` < 5.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.75 AND `sepalwidth` >= 2.7 AND `sepallength` >= 4.95 AND `sepallength` < 5.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `sepallength` < 6.05 AND `petallength` >= 4.75 AND `sepallength` >= 5.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` >= 5.95 AND `sepallength` < 6.05 AND `petallength` >= 4.75 AND `sepallength` >= 5.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.95 AND `sepallength` < 6.05 AND `petallength` >= 4.75 AND `sepallength` >= 5.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+END
+
+[[45]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.25 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petallength` < 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petallength` >= 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.35) THEN ('Virginica')
+END
+
+[[46]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petallength` >= 4.95 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 4.8 AND `petallength` < 4.95 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` < 5.95 AND `petallength` >= 4.8 AND `petallength` < 4.95 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` >= 5.95 AND `petallength` >= 4.8 AND `petallength` < 4.95 AND `petallength` >= 2.45) THEN ('Versicolor')
+END
+
+[[47]]
+<SQL> CASE
+WHEN (`petallength` < 2.3 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petallength` >= 2.3 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `petallength` >= 4.75) THEN ('Virginica')
+END
+
+[[48]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.45 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `sepalwidth` >= 2.45 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `sepalwidth` >= 2.45 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.7) THEN ('Virginica')
+END
+
+[[49]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petallength` < 2.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petallength` >= 2.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` < 5.05 AND `petallength` >= 4.95 AND `petallength` >= 2.45 AND `petalwidth` < 1.65) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petallength` >= 5.05 AND `petallength` >= 4.95 AND `petallength` >= 2.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petallength` >= 5.05 AND `petallength` >= 4.95 AND `petallength` >= 2.45 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[50]]
+<SQL> CASE
+WHEN (`petallength` < 2.3) THEN ('Setosa')
+WHEN (`sepallength` < 7.05 AND `petalwidth` < 1.65 AND `petallength` >= 2.3) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.05 AND `petalwidth` < 1.65 AND `petallength` >= 2.3) THEN ('Virginica')
+WHEN (`sepallength` >= 6.0 AND `petalwidth` >= 1.65 AND `petallength` >= 2.3) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.1 AND `sepallength` < 6.0 AND `petalwidth` >= 1.65 AND `petallength` >= 2.3) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `sepallength` < 6.0 AND `petalwidth` >= 1.65 AND `petallength` >= 2.3) THEN ('Versicolor')
+END
+
+[[51]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.55) THEN ('Virginica')
+WHEN (`petalwidth` < 0.7 AND `petalwidth` < 1.55) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.7 AND `petalwidth` < 1.55) THEN ('Versicolor')
+END
+
+[[52]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.65 AND `petalwidth` >= 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.65 AND `petalwidth` >= 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.45 AND `petalwidth` < 1.7 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `petalwidth` >= 1.45 AND `petalwidth` < 1.7 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `petallength` >= 4.95 AND `petalwidth` >= 1.45 AND `petalwidth` < 1.7 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` >= 1.45 AND `petalwidth` < 1.7 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[53]]
+<SQL> CASE
+WHEN (`sepalwidth` >= 3.35 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petallength` < 2.25 AND `sepalwidth` < 3.35 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` < 5.85 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`sepallength` >= 5.85 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65) THEN ('Versicolor')
+WHEN (`petallength` < 5.45 AND `petallength` >= 2.25 AND `sepalwidth` < 3.35 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petallength` >= 2.25 AND `sepalwidth` < 3.35 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[54]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `sepallength` >= 6.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` >= 6.85 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `petalwidth` < 1.7 AND `sepallength` < 6.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.7 AND `sepallength` < 6.85 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.1 AND `petalwidth` >= 1.7 AND `sepallength` < 6.85 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.25 AND `sepalwidth` >= 3.1 AND `petalwidth` >= 1.7 AND `sepallength` < 6.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.25 AND `sepalwidth` >= 3.1 AND `petalwidth` >= 1.7 AND `sepallength` < 6.85 AND `petallength` >= 2.35) THEN ('Virginica')
+END
+
+[[55]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` < 5.0 AND `petallength` < 4.7 AND `petallength` < 4.85 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` >= 5.0 AND `petallength` < 4.7 AND `petallength` < 4.85 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` < 6.5 AND `petallength` >= 4.7 AND `petallength` < 4.85 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` >= 6.5 AND `petallength` >= 4.7 AND `petallength` < 4.85 AND `petallength` >= 2.45) THEN ('Versicolor')
+END
+
+[[56]]
+<SQL> CASE
+WHEN (`petallength` < 2.45 AND `petallength` < 4.85) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`sepallength` < 4.95 AND `petallength` >= 2.45 AND `petallength` < 4.85) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `petalwidth` < 1.55 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` < 1.55 AND `petallength` >= 4.85) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `sepallength` >= 4.95 AND `petallength` >= 2.45 AND `petallength` < 4.85) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 4.95 AND `petallength` >= 2.45 AND `petallength` < 4.85) THEN ('Versicolor')
+END
+
+[[57]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepallength` >= 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.45 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.45 AND `sepallength` < 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `sepallength` >= 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `sepallength` >= 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `sepalwidth` >= 2.45 AND `sepallength` < 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` < 4.95 AND `sepalwidth` >= 2.85 AND `sepalwidth` >= 2.45 AND `sepallength` < 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepalwidth` >= 2.85 AND `sepalwidth` >= 2.45 AND `sepallength` < 6.05 AND `sepallength` >= 5.85 AND `petallength` < 5.2 AND `petallength` >= 4.75 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[58]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`sepallength` < 7.1 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.65) THEN ('Virginica')
+WHEN (`sepallength` < 5.4 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` >= 5.4 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.4 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65) THEN ('Virginica')
+END
+
+[[59]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`petallength` < 2.45 AND `sepallength` < 5.45 AND `petallength` < 4.85) THEN ('Setosa')
+WHEN (`petallength` >= 2.45 AND `sepallength` < 5.45 AND `petallength` < 4.85) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.6 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.6 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Setosa')
+WHEN (`sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.85) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `petallength` >= 4.85) THEN ('Virginica')
+END
+
+[[60]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.7) THEN ('Virginica')
+WHEN (`petalwidth` < 0.8 AND `petalwidth` < 1.7) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petalwidth` >= 0.8 AND `petalwidth` < 1.7) THEN ('Virginica')
+END
+
+[[61]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8 AND `sepallength` < 5.45) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `petalwidth` >= 0.8 AND `sepallength` < 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `petalwidth` >= 0.8 AND `sepallength` < 5.45) THEN ('Virginica')
+WHEN (`petallength` >= 4.7 AND `sepallength` < 5.75 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.75 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`petallength` < 2.6 AND `petallength` < 4.7 AND `sepallength` < 5.75 AND `sepallength` >= 5.45) THEN ('Setosa')
+WHEN (`petallength` >= 2.6 AND `petallength` < 4.7 AND `sepallength` < 5.75 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `petallength` < 4.95 AND `sepallength` >= 5.75 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7 AND `petallength` < 4.95 AND `sepallength` >= 5.75 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petallength` < 4.95 AND `sepallength` >= 5.75 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petallength` < 4.95 AND `sepallength` >= 5.75 AND `sepallength` >= 5.45) THEN ('Virginica')
+END
+
+[[62]]
+<SQL> CASE
+WHEN (`sepalwidth` >= 3.05 AND `sepallength` < 5.55) THEN ('Setosa')
+WHEN (`sepallength` < 4.85 AND `sepalwidth` < 3.05 AND `sepallength` < 5.55) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`sepallength` >= 4.95 AND `sepallength` >= 4.85 AND `sepalwidth` < 3.05 AND `sepallength` < 5.55) THEN ('Versicolor')
+WHEN (`petallength` < 5.45 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`sepallength` < 6.0 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.0 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`petalwidth` < 1.35 AND `sepallength` < 4.95 AND `sepallength` >= 4.85 AND `sepalwidth` < 3.05 AND `sepallength` < 5.55) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.35 AND `sepallength` < 4.95 AND `sepallength` >= 4.85 AND `sepalwidth` < 3.05 AND `sepallength` < 5.55) THEN ('Virginica')
+END
+
+[[63]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7 AND `sepallength` < 5.45) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `petalwidth` >= 0.7 AND `sepallength` < 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `petalwidth` >= 0.7 AND `sepallength` < 5.45) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.95 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`petalwidth` < 0.6 AND `petallength` < 4.75 AND `petallength` < 4.95 AND `sepallength` >= 5.45) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.6 AND `petallength` < 4.75 AND `petallength` < 4.95 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.25 AND `petallength` >= 4.75 AND `petallength` < 4.95 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `sepallength` < 6.25 AND `petallength` >= 4.75 AND `petallength` < 4.95 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `sepallength` < 6.25 AND `petallength` >= 4.75 AND `petallength` < 4.95 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `sepalwidth` < 2.85 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepalwidth` < 2.85 AND `petalwidth` < 1.7 AND `petallength` >= 4.95 AND `sepallength` >= 5.45) THEN ('Versicolor')
+END
+
+[[64]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[65]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` >= 5.35 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `petallength` < 5.35 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepalwidth` < 2.45 AND `petallength` >= 4.95 AND `petallength` < 5.35 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.45 AND `petallength` >= 4.95 AND `petallength` < 5.35 AND `sepallength` < 7.1 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+END
+
+[[66]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.3 AND `petalwidth` < 1.65 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `sepalwidth` >= 2.3 AND `petalwidth` < 1.65 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`sepallength` < 5.9 AND `sepalwidth` < 2.65 AND `sepalwidth` >= 2.3 AND `petalwidth` < 1.65 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`sepallength` < 6.2 AND `sepallength` >= 5.9 AND `sepalwidth` < 2.65 AND `sepalwidth` >= 2.3 AND `petalwidth` < 1.65 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepallength` >= 6.2 AND `sepallength` >= 5.9 AND `sepalwidth` < 2.65 AND `sepalwidth` >= 2.3 AND `petalwidth` < 1.65 AND `petallength` >= 2.35) THEN ('Versicolor')
+END
+
+[[67]]
+<SQL> CASE
+WHEN (`petallength` < 2.45 AND `sepallength` < 5.35) THEN ('Setosa')
+WHEN (`petallength` >= 2.45 AND `sepallength` < 5.35) THEN ('Versicolor')
+WHEN (`petallength` < 2.4 AND `petalwidth` < 1.7 AND `sepallength` >= 5.35) THEN ('Setosa')
+WHEN (`petallength` >= 2.4 AND `petalwidth` < 1.7 AND `sepallength` >= 5.35) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.1 AND `sepallength` < 5.95 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `sepallength` < 5.95 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.35) THEN ('Versicolor')
+END
+
+[[68]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petalwidth` < 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` >= 6.25 AND `petallength` < 4.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.75 AND `sepallength` < 6.25 AND `petallength` < 4.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` >= 1.75 AND `sepallength` < 6.25 AND `petallength` < 4.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.75 AND `sepallength` < 6.25 AND `petallength` < 4.85 AND `petalwidth` >= 1.55 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[69]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.7 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.7 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.7 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` < 5.25 AND `sepalwidth` < 2.65 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.7 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.25 AND `sepalwidth` < 2.65 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.7 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[70]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petalwidth` < 0.8 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.8 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petalwidth` < 0.6 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.6 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.25 AND `sepallength` < 7.1 AND `petalwidth` >= 0.6 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.25 AND `sepallength` < 7.1 AND `petalwidth` >= 0.6 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+END
+
+[[71]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 6.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 4.75 AND `sepallength` >= 6.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.2 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petallength` < 5.25 AND `petalwidth` < 1.65 AND `petallength` >= 4.75 AND `sepallength` >= 6.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petallength` >= 5.25 AND `petalwidth` < 1.65 AND `petallength` >= 4.75 AND `sepallength` >= 6.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.85 AND `sepalwidth` < 3.2 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 5.05 AND `sepalwidth` < 2.85 AND `sepalwidth` < 3.2 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` >= 5.05 AND `sepalwidth` < 2.85 AND `sepalwidth` < 3.2 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `sepallength` < 6.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+END
+
+[[72]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`petallength` >= 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`petalwidth` < 1.6 AND `petalwidth` >= 0.8 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `petalwidth` >= 0.8 AND `petallength` < 4.75) THEN ('Virginica')
+WHEN (`sepallength` < 6.6 AND `petallength` < 4.95 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepallength` >= 6.6 AND `petallength` < 4.95 AND `petallength` >= 4.75) THEN ('Versicolor')
+END
+
+[[73]]
+<SQL> CASE
+WHEN (`petallength` < 2.7) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.65 AND `petalwidth` < 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.15 AND `petalwidth` >= 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`petalwidth` < 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`sepallength` < 5.4 AND `sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petallength` >= 2.7) THEN ('Virginica')
+WHEN (`sepallength` >= 5.4 AND `sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`petallength` < 5.25 AND `petalwidth` >= 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Versicolor')
+WHEN (`petallength` >= 5.25 AND `petalwidth` >= 1.35 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.55 AND `petalwidth` < 1.65 AND `petallength` >= 2.7) THEN ('Virginica')
+END
+
+[[74]]
+<SQL> CASE
+WHEN (`petallength` < 2.35) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.75 AND `petallength` < 4.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` < 4.75 AND `petallength` < 4.85 AND `petallength` >= 2.35) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petallength` >= 4.75 AND `petallength` < 4.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.6 AND `sepallength` >= 5.95 AND `petallength` >= 4.75 AND `petallength` < 4.85 AND `petallength` >= 2.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `sepallength` >= 5.95 AND `petallength` >= 4.75 AND `petallength` < 4.85 AND `petallength` >= 2.35) THEN ('Virginica')
+END
+
+[[75]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`sepallength` < 4.95 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` >= 6.05 AND `petallength` >= 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 4.95 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.75 AND `sepallength` < 6.05 AND `petallength` >= 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 5.9 AND `sepalwidth` < 2.75 AND `sepallength` < 6.05 AND `petallength` >= 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` >= 5.9 AND `sepalwidth` < 2.75 AND `sepallength` < 6.05 AND `petallength` >= 4.85 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+END
+
+[[76]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`sepallength` < 6.05 AND `petallength` < 5.0 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 5.0 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 6.05 AND `petallength` < 5.0 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` < 6.05 AND `petalwidth` < 1.7 AND `petallength` >= 5.0 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petalwidth` < 1.7 AND `petallength` >= 5.0 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` >= 4.75 AND `sepallength` >= 6.05 AND `petallength` < 5.0 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 4.75 AND `sepallength` >= 6.05 AND `petallength` < 5.0 AND `petalwidth` >= 0.7) THEN ('Virginica')
+END
+
+[[77]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 5.0 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.1 AND `petallength` >= 5.0 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.1 AND `petalwidth` >= 1.65 AND `petallength` < 5.0 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petalwidth` >= 1.65 AND `petallength` < 5.0 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `sepallength` < 6.1 AND `petallength` >= 5.0 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` < 6.1 AND `petallength` >= 5.0 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[78]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petalwidth` < 0.7 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[79]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` < 4.95 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 5.35 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` < 5.05 AND `petallength` < 5.35 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 5.05 AND `petallength` < 5.35 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[80]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Virginica')
+WHEN (`petallength` < 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.25 AND `sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petallength` >= 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` >= 4.65 AND `petallength` < 4.85 AND `petalwidth` >= 1.65) THEN ('Versicolor')
+WHEN (`sepallength` < 5.5 AND `sepalwidth` < 2.25 AND `sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.5 AND `sepalwidth` < 2.25 AND `sepallength` < 7.1 AND `petalwidth` >= 0.7 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[81]]
+<SQL> CASE
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`petalwidth` < 0.8 AND `sepallength` < 5.45 AND `petallength` < 4.85) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.8 AND `sepallength` < 5.45 AND `petallength` < 4.85) THEN ('Versicolor')
+WHEN (`petalwidth` < 0.65 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Setosa')
+WHEN (`sepallength` < 6.15 AND `petalwidth` < 1.55 AND `petallength` >= 4.85) THEN ('Virginica')
+WHEN (`sepallength` >= 6.15 AND `petalwidth` < 1.55 AND `petallength` >= 4.85) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `petalwidth` >= 0.65 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.0 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.65 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.65 AND `sepallength` >= 5.45 AND `petallength` < 4.85) THEN ('Versicolor')
+END
+
+[[82]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` < 5.4 AND `petalwidth` >= 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `sepallength` >= 5.4 AND `petalwidth` >= 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `sepallength` >= 5.4 AND `petalwidth` >= 1.65 AND `petallength` < 4.85 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+END
+
+[[83]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`sepalwidth` < 2.25 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` < 6.15 AND `sepallength` >= 6.05 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` >= 6.15 AND `sepallength` >= 6.05 AND `sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+END
+
+[[84]]
+<SQL> CASE
+WHEN (`sepalwidth` < 3.05 AND `petallength` >= 4.75) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.85 AND `sepallength` < 5.45 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 2.85 AND `sepallength` < 5.45 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`sepalwidth` < 3.6 AND `sepallength` >= 5.45 AND `petallength` < 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.6 AND `sepallength` >= 5.45 AND `petallength` < 4.75) THEN ('Setosa')
+WHEN (`sepallength` < 6.05 AND `sepalwidth` >= 3.05 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `sepallength` >= 6.05 AND `sepalwidth` >= 3.05 AND `petallength` >= 4.75) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.15 AND `sepallength` >= 6.05 AND `sepalwidth` >= 3.05 AND `petallength` >= 4.75) THEN ('Virginica')
+END
+
+[[85]]
+<SQL> CASE
+WHEN (`petallength` < 2.35 AND `sepallength` < 5.55) THEN ('Setosa')
+WHEN (`petallength` >= 2.35 AND `sepallength` < 5.55) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`sepallength` < 6.15 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`sepallength` >= 6.15 AND `sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`petalwidth` < 0.75 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+WHEN (`sepallength` < 7.1 AND `petalwidth` >= 0.75 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.1 AND `petalwidth` >= 0.75 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.55) THEN ('Virginica')
+END
+
+[[86]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 4.45 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.55 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 5.15 AND `petallength` >= 4.45 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 6.5 AND `petalwidth` < 1.55 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` >= 6.5 AND `petalwidth` < 1.55 AND `petallength` >= 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `sepallength` >= 5.15 AND `petallength` >= 4.45 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` < 5.95 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.15 AND `petallength` >= 4.45 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.7 AND `sepallength` >= 5.15 AND `petallength` >= 4.45 AND `petallength` < 4.85 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[87]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` >= 1.55 AND `petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepallength` >= 5.95 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[88]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.8) THEN ('Setosa')
+WHEN (`petallength` < 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petalwidth` < 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `petallength` < 4.85 AND `petalwidth` >= 1.7 AND `petalwidth` >= 0.8) THEN ('Virginica')
+END
+
+[[89]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `petalwidth` >= 1.55 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.45 AND `petalwidth` < 1.7 AND `petalwidth` >= 1.55 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.45 AND `petalwidth` < 1.7 AND `petalwidth` >= 1.55 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[90]]
+<SQL> CASE
+WHEN (`petallength` < 3.1 AND `sepalwidth` >= 3.35) THEN ('Setosa')
+WHEN (`petallength` < 3.05 AND `sepallength` < 4.95 AND `sepalwidth` < 3.35) THEN ('Setosa')
+WHEN (`petallength` >= 3.05 AND `sepallength` < 4.95 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `petallength` >= 3.1 AND `sepalwidth` >= 3.35) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `petallength` >= 3.1 AND `sepalwidth` >= 3.35) THEN ('Virginica')
+WHEN (`petallength` < 2.1 AND `petallength` < 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Setosa')
+WHEN (`petallength` >= 2.1 AND `petallength` < 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepalwidth` < 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `petalwidth` < 1.7 AND `sepalwidth` < 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`sepalwidth` >= 3.1 AND `petallength` < 4.85 AND `sepalwidth` >= 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.65 AND `petallength` >= 4.85 AND `sepalwidth` >= 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 4.85 AND `sepalwidth` >= 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.35 AND `petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `sepalwidth` < 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.35 AND `petalwidth` < 1.55 AND `petalwidth` < 1.7 AND `sepalwidth` < 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.6 AND `sepalwidth` < 3.1 AND `petallength` < 4.85 AND `sepalwidth` >= 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.6 AND `sepalwidth` < 3.1 AND `petallength` < 4.85 AND `sepalwidth` >= 2.75 AND `petallength` >= 4.75 AND `sepallength` >= 4.95 AND `sepalwidth` < 3.35) THEN ('Virginica')
+END
+
+[[91]]
+<SQL> CASE
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petalwidth` < 0.65 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`sepallength` < 6.1 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.65) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.1 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.65) THEN ('Virginica')
+WHEN (`petalwidth` < 0.65 AND `sepalwidth` < 2.85 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`petalwidth` >= 0.65 AND `sepalwidth` < 2.85 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` < 3.2 AND `sepalwidth` >= 2.85 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Setosa')
+WHEN (`petallength` >= 3.2 AND `sepalwidth` >= 2.85 AND `sepallength` < 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` < 5.2 AND `petalwidth` >= 0.65 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Versicolor')
+WHEN (`petallength` >= 5.2 AND `petalwidth` >= 0.65 AND `sepallength` >= 5.45 AND `petalwidth` < 1.65) THEN ('Virginica')
+END
+
+[[92]]
+<SQL> CASE
+WHEN (`petalwidth` < 0.7) THEN ('Setosa')
+WHEN (`sepallength` >= 7.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 4.95 AND `sepalwidth` < 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` >= 4.95 AND `sepalwidth` < 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petallength` < 4.75 AND `sepalwidth` >= 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.7 AND `petallength` >= 4.75 AND `sepalwidth` >= 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepalwidth` < 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepalwidth` >= 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+WHEN (`sepallength` < 6.05 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepalwidth` >= 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.05 AND `sepalwidth` >= 3.15 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `sepalwidth` >= 2.65 AND `sepallength` < 7.05 AND `petalwidth` >= 0.7) THEN ('Virginica')
+END
+
+[[93]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`sepallength` < 5.9 AND `petalwidth` < 1.55 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` < 4.95 AND `sepallength` >= 5.9 AND `petalwidth` < 1.55 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.9 AND `petalwidth` < 1.55 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 6.75 AND `petalwidth` < 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.75 AND `petalwidth` < 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` >= 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 5.85 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` < 4.95 AND `sepallength` >= 5.85 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 4.95 AND `sepallength` >= 5.85 AND `sepallength` < 5.95 AND `petalwidth` >= 1.65 AND `petalwidth` >= 1.55 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[94]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`sepallength` >= 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` < 3.9 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 3.9 AND `sepallength` < 4.95 AND `petallength` < 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 5.35 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.7 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petalwidth` >= 1.7 AND `petallength` >= 4.75 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[95]]
+<SQL> CASE
+WHEN (`petallength` < 2.5) THEN ('Setosa')
+WHEN (`petalwidth` < 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepalwidth` < 3.0 AND `petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`sepalwidth` >= 3.0 AND `petalwidth` >= 1.6 AND `sepallength` < 5.95 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`petalwidth` < 1.55 AND `sepallength` < 6.15 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.5) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.55 AND `sepallength` < 6.15 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`sepallength` < 7.1 AND `sepallength` >= 6.15 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.5) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.1 AND `sepallength` >= 6.15 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petallength` >= 2.5) THEN ('Virginica')
+END
+
+[[96]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petalwidth` < 1.65 AND `petallength` < 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.65 AND `petallength` < 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petalwidth` >= 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 7.0 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`sepallength` >= 7.0 AND `sepalwidth` >= 2.65 AND `petalwidth` < 1.7 AND `sepallength` >= 5.95 AND `petalwidth` < 1.85 AND `petallength` >= 4.75 AND `petallength` >= 2.6) THEN ('Virginica')
+END
+
+[[97]]
+<SQL> CASE
+WHEN (`petallength` < 2.6) THEN ('Setosa')
+WHEN (`petalwidth` < 1.65 AND `sepallength` < 6.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` < 5.05 AND `sepallength` >= 6.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+WHEN (`petallength` >= 5.05 AND `sepallength` >= 6.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`petallength` >= 4.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` >= 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` < 5.4 AND `sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petallength` >= 2.6) THEN ('Virginica')
+WHEN (`sepallength` >= 5.4 AND `sepallength` < 5.95 AND `petallength` < 4.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.65 AND `petallength` >= 2.6) THEN ('Versicolor')
+END
+
+[[98]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petalwidth` >= 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` < 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petallength` >= 4.75 AND `sepalwidth` < 2.25 AND `petalwidth` < 1.65 AND `petallength` >= 2.45) THEN ('Virginica')
+END
+
+[[99]]
+<SQL> CASE
+WHEN (`sepalwidth` >= 2.75 AND `sepallength` < 5.45) THEN ('Setosa')
+WHEN (`petallength` >= 4.85 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepallength` < 4.75 AND `sepalwidth` < 2.75 AND `sepallength` < 5.45) THEN ('Setosa')
+WHEN (`sepallength` >= 4.75 AND `sepalwidth` < 2.75 AND `sepallength` < 5.45) THEN ('Versicolor')
+WHEN (`petallength` < 4.75 AND `petallength` < 4.85 AND `sepallength` >= 5.45) THEN ('Versicolor')
+WHEN (`sepallength` < 6.4 AND `petallength` >= 4.75 AND `petallength` < 4.85 AND `sepallength` >= 5.45) THEN ('Virginica')
+WHEN (`sepallength` >= 6.4 AND `petallength` >= 4.75 AND `petallength` < 4.85 AND `sepallength` >= 5.45) THEN ('Versicolor')
+END
+
+[[100]]
+<SQL> CASE
+WHEN (`petallength` < 2.45) THEN ('Setosa')
+WHEN (`petalwidth` < 1.7 AND `sepallength` >= 6.25 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`petalwidth` >= 1.7 AND `sepallength` >= 6.25 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` >= 5.35 AND `petalwidth` < 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepallength` < 5.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`petallength` < 4.75 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` < 6.0 AND `sepallength` >= 5.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Versicolor')
+WHEN (`sepallength` >= 6.0 AND `sepallength` >= 5.85 AND `petalwidth` >= 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` < 2.45 AND `petallength` >= 4.75 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Virginica')
+WHEN (`sepalwidth` >= 2.45 AND `petallength` >= 4.75 AND `petallength` < 5.35 AND `petalwidth` < 1.65 AND `sepallength` < 6.25 AND `petallength` >= 2.45) THEN ('Versicolor')
+END
+
