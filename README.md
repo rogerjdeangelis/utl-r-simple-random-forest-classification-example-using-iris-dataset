@@ -986,11 +986,11 @@ R simple random forest classification example using iris datase
     sink(file="d:/txt/gettree.txt");                                                                                                                                              
     getTree(rf_classifier, 1, labelVar=TRUE);                                                                                                                                     
     sink();                                                                                                                                                                       
-    /* create a text file with sas code tha can be used to run the model in sas */                                                                                                
+    /* create a text file with sas datastep code tha can be used to run the model in sas */                                                                                                
     sink(file="d:/txt/codesas.txt");                                                                                                                                              
     tidypredict_fit(rf_classifier)[1];                                                                                                                                            
     sink();                                                                                                                                                                       
-    /* create a text file with sas code tha can be used to run the model in sas */                                                                                                
+    /* create a text file with sas sql code tha can be used to run the model in sas */                                                                                                
     sink(file="d:/txt/sqlcode.txt");                                                                                                                                              
     tidypredict_sql(rf_classifier,dbplyr::simulate_mssql());                                                                                                                      
     sink();                                                                                                                                                                       
