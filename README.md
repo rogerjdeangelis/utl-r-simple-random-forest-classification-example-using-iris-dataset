@@ -80,8 +80,8 @@ R simple random forest classification example using iris datase
                     |_|                                                                                                                                                           
     FILE OUTPUTS                                                                                                                                                                  
                                                                                                                                                                                   
-       https://tinyurl.com/ycgtmw2f  d:/pdf/gridplot.pdf       * Demension reduction plot(like PCA?)                                                                              
-       https://tinyurl.com/yc4jh86u  d:/pdf/mds.pdf            * Mutidemensional scaling - indication od good randomforest                                                        
+       https://tinyurl.com/ycgtmw2f  d:/pdf/gridplot.pdf       * Dimension reduction plot(like PCA?)                                                                              
+       https://tinyurl.com/yc4jh86u  d:/pdf/mds.pdf            * Mutidemensional scaling - indication of good randomforest                                                        
        https://tinyurl.com/yaqublff  d:/txt/training.txt       * Summary randomforest training data output                                                                        
        https://tinyurl.com/ybfkklpg  d:/pdf/gini.pdf           * GINI plots                                                                                                       
        https://tinyurl.com/yaq4pjtf  d:/pdf/rocr.pdf           * ROC  -- true and false positive percents                                                                         
